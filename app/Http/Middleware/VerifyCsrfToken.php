@@ -19,14 +19,25 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        //
+        // routing yang sudah dibuat
+        // ditambah kesini agar bisa diakses
+        // supaya data yang dikirim dari frontend
+        // dapat diterima di controller
         '/tambahAdmin',
         '/loginAdmin',
         '/hapusAdmin',
+        '/ubahAdmin',
         '/listAdmin',
         '/tambahKonten',
         '/ubahKonten',
         '/hapusKonten',
-        '/listKonten'
+        '/listKonten',
+        '/registrasi',
+        '/loginPeserta',
+        '/listKontenPeserta',
+        '/listSoal',
+        '/jawab',
+        '/hitungSkor',
+        '/selesaiUjian',
     ];
 }
